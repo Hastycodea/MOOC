@@ -10,6 +10,8 @@ public class PositiveNumbers {
 
         Collections.addAll(answers, 1, -56, 8, 10, -78, 9, -34, 89, 33, -66);
 
+
+        // testing .reduce method in sum
         int sum = answers.stream().reduce(0, (p, v) -> p + v);
         System.out.println("Sum: " + sum);
 
@@ -26,6 +28,7 @@ public class PositiveNumbers {
 
         Collections.addAll(names, "Kimtai", "Robin", "Kimtai", "Juliani", "Maasai", "Kimtai");
 
+        //testing distinct => a function to print unique values
         names.stream().distinct().forEach(System.out::println);
 
     }
